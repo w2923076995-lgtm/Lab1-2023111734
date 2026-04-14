@@ -212,18 +212,7 @@ class WordGraph:
             result = ", ".join(bridge_words[:-1]) + f", and {bridge_words[-1]}"
             print(f"\nThe bridge words from {word1.lower()} to {word2.lower()} are: {result}.\n")
 
-    def print_bridge_words(self, word1, word2):
-        bridge_words, err = self.find_bridge_words(word1, word2)
 
-        if err:
-            print("\n" + err + "\n")
-            return
-
-        if len(bridge_words) == 1:
-            print(f"\nThe bridge words from {word1.lower()} to {word2.lower()} are: {bridge_words[0]}.\n")
-        else:
-            result = ", ".join(bridge_words[:-1]) + f", and {bridge_words[-1]}"
-            print(f"\nThe bridge words from {word1.lower()} to {word2.lower()} are: {result}.\n")
 
     def get_bridge_words_list(self, word1, word2):
         """
